@@ -3,7 +3,8 @@ function init(){
   var redAlertButton = document.getElementById('entrybutton');
     
   function textalert(){
-    alert("Rohit Pemmasani: ");
+    var userSelection = document.getElementById('entryinput');
+    alert("Rohit Pemmasani: "+userSelection);
   }
   redAlertButton.addEventListener('click', textalert);
   }

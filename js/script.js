@@ -4,7 +4,7 @@ function init(){
   function textalert(){
     var userSelection = document.getElementById('entryinput');
     document.getElementById('textoutput').innerHTML = userSelection.value;
-    alert("Rohit Pemmasani: "+userSelection.value);
+    alert("Rohit Pemmasani: " + userSelection.value);
   }
   redAlertButton.addEventListener('click', textalert);
   }

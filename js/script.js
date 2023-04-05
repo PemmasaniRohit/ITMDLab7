@@ -1,12 +1,13 @@
 function init(){
-//add your javascrip between these two lines of code
-  var redAlertButton = document.getElementById('entrybutton');
-  function textalert(){
-    var userSelection = document.getElementById('entryinput');
-    var A =  userSelection.value
-    document.getElementById('textoutput').innerHTML =A;
-    alert("Rohit Pemmasani: "+A);
+  var button = document.getElementById('entrybutton');
+
+  function showMeText(){
+    var textbox = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerHTML = textbox.value;
+    alert("Rohit Pemmasani: " + textbox.value);
   }
-  redAlertButton.addEventListener('click', textalert);
+
+  button.addEventListener('click', showMeText);
   }
+  
 window.addEventListener('load', init);
